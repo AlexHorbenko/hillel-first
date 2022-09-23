@@ -454,6 +454,10 @@ table {
   overflow: hidden;
 }
 
+.a {
+  text-decoration: none;
+}
+
 .a:hover {
   color: #0085FF;
 }
@@ -464,6 +468,32 @@ table {
 
 .backgroung-main {
   background-color: #F5F5FA;
+}
+
+@media (min-width: 768px) {
+  .dota > :nth-child(n) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .dota > :nth-child(n)::after {
+    content: '';
+    background-color: #B3B3BA;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .dota > :nth-last-child(1)::after {
+    content: none;
+  }
+  .dota.dota-2 > :nth-child(n)::after {
+    background-color: #E6E6F0;
+  }
 }
 
 .header {
@@ -971,7 +1001,7 @@ table {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 0px;
-    width: 648px;
+    width: 100%;
   }
   .achieve__block > :nth-child(n) {
     display: -webkit-box;
@@ -1061,6 +1091,235 @@ table {
         -ms-flex-align: center;
             align-items: center;
     padding: 30px 60px;
+  }
+}
+
+.footer {
+  border-top: 2px solid #E6E6F0;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 30px;
+  padding: 30px 0;
+}
+
+.contacts__one {
+  margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__one .adress-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #323264;
+  margin-bottom: 10px;
+}
+
+.contacts__one .map {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #24A3FF;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.contacts__two {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__two .fb {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacts__two .phone-footer {
+  color: #46466E;
+  margin-bottom: 10px;
+}
+
+.contacts__two .mailto {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+  text-decoration: none;
+}
+
+.contacts__three .copyright {
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .contacts__one {
+    margin-bottom: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .contacts__one .adress-footer {
+    margin-bottom: 0;
+  }
+  .contacts__one .map {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #24A3FF;
+  }
+  .contacts__two {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contacts__two .fb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .contacts__two .phone-footer {
+    margin: 0;
+  }
+  .contacts__two .mailto {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #24A3FF;
+    text-decoration: none;
+  }
+  __three .copyright {
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3BA;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 141px;
+    width: 904px;
+  }
+  .contacts__one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contacts__one .map {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #24A3FF;
+  }
+  .contacts__two {
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  __three .copyright {
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3BA;
   }
 }
 

@@ -41,6 +41,7 @@
 }
 
 .a {
+    text-decoration: none;
     &:hover {  
         color: $active-hover;
     }
@@ -52,4 +53,34 @@
 
 .backgroung-main {
     background-color: $grey-bg;
+}
+
+@media (min-width:768px) {
+    .dota {
+        & > :nth-child(n) {
+            display: flex;
+            align-items: center;
+
+            &::after {
+                content: '';
+                background-color: $grey-text;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
+
+        & > :nth-last-child(1) {
+            &::after {
+                content: none;
+            }
+        }
+        &.dota-2 {
+            & > :nth-child(n)::after {
+                background-color: $grey-separator;
+            }
+        }
+    }
 }
