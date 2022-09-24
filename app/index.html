@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/montserrat-v25-cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v25-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -47,7 +49,6 @@
         </header>
     </div>
 
-    <!-- <main class="homepage"> -->
     <div class="container">
         <h2 class="title-white">you legal solutions provider</h2>
         <div class="scroll">
@@ -66,12 +67,12 @@
                 <p class="turn-p">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
             </div>
         </div>
-
-        <div>
-            <h2 class="title-blue">Services</h2>
-        </div>
-
+     
         <div class="what">
+            <a href="#" class="title-blue">
+                Services
+                <img src="img/arrow.svg" width="12" height="13" alt="arrow">
+            </a>
             <h2 class="title-pink">What can we do better than others?</h2>
             <div class="cards">
                 <article class="cards__one">
@@ -109,61 +110,66 @@
     </div>
 </div>
     <div class="man container">
-        <div class="man__pic">
-            <img src="img/man.png" alt="man"> 
-        </div>
+        <div class="man__pic"></div>
         <div class="man__text">
-        <h2 class="title-blue">команда</h2>
-        <p class="title-pink">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
-        <p class="title-name">Олександр Олександровський</p>
-        <p class="position-name">Керуючий партнер</p>
+            <a href="#" class="title-blue">
+                команда
+                <img src="img/arrow.svg" width="12" height="13" alt="arrow">
+            </a>
+            <p class="title-pink">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+            <p class="title-name">Олександр Олександровський</p>
+            <p class="position-name">Керуючий партнер</p>
+        </div>    
     </div>
 
-    <div class="adverts container">
+    <div class="adverts">
         <p class="trust">They already trust us</p>
-        <img src="img/hillel.png" alt="ad">
-        <img src="img/wanna.png" alt="ad">
-        <img src="img/tapgerine.png" alt="ad">
-        <img src="img/3Dlook.png" alt="ad">
-        <img src="img/orange.png" alt="ad">
-        <img src="img/adtell.png" alt="ad">
-        <img src="img/click.png" alt="ad">
-        <img src="img/leasing.png" alt="ad">
-        <img src="img/infra.png" alt="ad">
-        <img src="img/city.png" alt="ad">
-        <img src="img/art.png" alt="ad">
-        <img src="img/ultimate.png" alt="ad">
+        <div class="pics-wrap">
+            <img class="trust-pics" src="img/hillel.png" alt="ad">
+            <img class="trust-pics" src="img/wanna.png" alt="ad">
+            <img class="trust-pics" src="img/tapgerine.png" alt="ad">
+            <img class="trust-pics" src="img/3Dlook.png" alt="ad">
+            <img class="trust-pics" src="img/orange.png" alt="ad">
+            <img class="trust-pics" src="img/adtell.png" alt="ad">
+            <img class="trust-pics trust-pics-hidden" src="img/click.png" alt="ad">
+            <img class="trust-pics trust-pics-hidden" src="img/leasing.png" alt="ad">
+            <img class="trust-pics trust-pics-hidden" src="img/infra.png" alt="ad">
+            <img class="trust-pics trust-pics-hidden" src="img/city.png" alt="ad">
+            <img class="trust-pics trust-pics-hidden" src="img/art.png" alt="ad">
+            <img class="trust-pics trust-pics-hidden" src="img/ultimate.png" alt="ad">
+        </div>
     </div>
 
     <div class="publications continer">
-        <h2 class="title-blue">Publications</h2>
+        <a href="#" class="title-blue">
+            Publications
+            <img src="img/arrow.svg" width="12" height="13" alt="arrow">
+        </a>
         <h2 class="title-pink">We have something to tell</h2>
         <article class="publications-card">
             <div class="publications-card__one">
-                <img src="img/associate.png" alt="pic">
+                <div class="card__img card__img-ass"></div>
                 <p class="p-title">Equity associate</p>
                 <p class="p-date">April 22</p>
                 <p class="p-description">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
             </div>
-            <div class="publications-card__two">
-                <img src="img/gd.png" alt="pic">
+            <div class="publications-card__one">
+                <div class="card__img card__img-gd"></div>
                 <p class="p-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</p>
                 <p class="p-date">September 29</p>
                 <p class="p-description">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
             </div>
+            <div class="millenial publications-card__one">
+                <div class="card__img card__img-mill"></div>
+                <p class="p-title">Millennial Testament</p>
+                <p class="p-date">August 19</p>
+                <p class="p-description">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+            </div>
         </article>
     </div>
 
-    <div class="millenial container">
-        <img src="img/millenial.png" alt="pic">
-        <p class="p-title">Millennial Testament</p>
-        <p class="p-date">August 19</p>
-        <p class="p-description">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-    </div>
 
-    <!-- </main> -->
-
-<footer class="footer container">
+<footer class="footer backgroung-main container">
     <div class="contacts">
         <div class="contacts__one dota">
             <div class="adress adress-footer">Kyiv, Mechnikova str., 14/1</div>
