@@ -1,0 +1,156 @@
+.gradient {
+    background: url('../img/h.svg') no-repeat center top, 
+                linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-size: 523px 600px, cover;
+}
+
+
+.title-white {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: $white;
+    margin: 129px 0 159px;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.consistent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+
+    .list-white {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+    }
+
+    .line {
+        width: 100%;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    &__script {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .turn {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+    }
+
+    .turn-p {
+        font-size: 19px;
+        line-height: 30px;
+        color: $white;
+    }  
+}
+
+.title-blue {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active-regular;
+}
+
+.title-pink {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.head-blue {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $active-regular;
+}
+
+.p-blue {
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+}
+
+.title-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-text;
+}
+
+.position-name {
+    font-size: 14px;
+    line-height: 22px;
+    color: $grey-text;
+}
+
+.trust {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main;
+}
+
+.p-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $active-regular;
+}
+
+.p-date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $grey-text;
+}
+
+.p-description {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+// @media (min-width:768px) {
+    .gradient {
+        background-size: 893px 1024px, cover;
+    }
+    
+// }
+
+
+// @media (min-width: 992px) {
+
+// }
